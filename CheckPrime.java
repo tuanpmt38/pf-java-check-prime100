@@ -5,8 +5,8 @@ public class CheckPrime {
         for (number = 1; number < 100; number++) {
             boolean check = true;
             {
-                int checknumber = (int) Math.sqrt(number);
-                for (int i = 2; i <= checknumber; i++) {
+                int CheckNumber = (int) Math.sqrt(number);
+                for (int i = 2; i <= CheckNumber; i++) {
                     if (number % i == 0) {
                         check = false;
                         break;
