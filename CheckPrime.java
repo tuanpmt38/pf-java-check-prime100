@@ -1,10 +1,12 @@
 public class CheckPrime {
     public static void main(String[] args) {
         int number;
+        System.out.println("Hiển thị 100 số nguyên tố đầu tiên:");
         for (number = 1; number < 100; number++) {
             boolean check = true;
             {
-                for (int i = 2; i <= Math.sqrt(number); i++) {
+                int checknumber = (int) Math.sqrt(number);
+                for (int i = 2; i <= checknumber; i++) {
                     if (number % i == 0) {
                         check = false;
                         break;
